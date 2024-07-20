@@ -7,7 +7,7 @@
  ![1bit-CPUのレイアウト](/images/klayout_1bit-CPU_size.png)
 
 
-#　論理回路化
+# 論理回路化
 まずは、74HC series logic IC部分を論理回路に起こし直して、シミュレーションを行いました。  
 シミュレーションには[logicsim](http://www.cburch.com/logisim/)を利用しています。  
 
