@@ -100,12 +100,14 @@
  ![パッドフレーム拡大](images/klayout_frame_zoomin.png)
 
 
-# 動作用ボード
-クロック源とROMとRESETボタンは内蔵していないため、外付けで用意する必要があります。  
-そのため、それらに加え、電源や各種動作確認用のLEDも付けた基板を設計する予定です。  
+# [本チップ用ボード](kicad/)
+メモリや外部クロック、動作確認用のLEDを搭載したボードをKiCADで設計しました。  
 
- ![1bit-CPU](https://naoto64.github.io/1bit-CPU/img/implementation-example.jpg)
+[本チップ用ボードディレクトリ：KiCADファイル](kicad/)
 
+ ![ボード：回路図](images/kicad_circuit.png)
+ ![ボード：アートワーク](images/kicad_artwork.png)
 
 ## 動作確認
-来年の１月に到着予定なので、動作用の基板を作って、 その時を待つのみです！
+
+
