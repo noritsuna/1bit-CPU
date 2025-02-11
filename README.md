@@ -113,5 +113,6 @@
 無事に、本家の1bit-CPUボードと同じ動きをしております！  
 ※クロックが微妙にずれているため、同期はしてません。
 
- ![ボード：実物](images/1bit-CPU_board.png)
- ![ボード：動画](images/1bit-CPU_board.mp4)
+ ![ボード：実物](images/1bit-CPU_board.jpg)
+[ボード：YouTube動画](https://youtube.com/shorts/-G9ZElhzAAo?feature=share)
+[ボード：動画ファイル](images/1bit-CPU_board.mp4)
