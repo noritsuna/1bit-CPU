@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OpenMPW")(type "KiCad")(uri "${KIPRJMOD}/OpenMPW-PTC06.kicad_sym")(options "")(descr ""))
+  (lib (name "Register")(type "KiCad")(uri "${KIPRJMOD}/3296W-1-103.kicad_sym")(options "")(descr ""))
+)

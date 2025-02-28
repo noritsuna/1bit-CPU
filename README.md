@@ -100,10 +100,10 @@
  ![パッドフレーム拡大](images/klayout_frame_zoomin.png)
 
 
-# [本チップ用ボード](kicad/)
+# [本チップ用ボード](kicad/1bit-CPU_board)
 メモリや外部クロック、動作確認用のLEDを搭載したボードをKiCADで設計しました。  
 
-[本チップ用ボードディレクトリ：KiCADファイル](kicad/)
+[本チップ用ボードディレクトリ：KiCADファイル](kicad/1bit-CPU_board)
 
  ![ボード：回路図](images/kicad_circuit.png)
  ![ボード：アートワーク](images/kicad_artwork.png)
@@ -116,3 +116,53 @@
  ![ボード：実物](images/1bit-CPU_board.jpg)
 [ボード：YouTube動画](https://youtube.com/shorts/-G9ZElhzAAo?feature=share)
 [ボード：動画ファイル](images/1bit-CPU_board.mp4)
+
+
+
+# [本チップ用ラズパイHAT](kicad/1bit-CPU_HAT)
+ラズパイHATをKiCADで設計しました。  
+ただ、本CPUは5V動作で、ラズパイは3.3V動作のため、レベル変換が必要となります。  
+
+## インバータの応用
+レベル変換の一つの手として、バッファ回路を使う手があります。  
+バッファ回路＝インバータ回路*2です。そこで、今回は、みんなで実装したインバータ回路をそのまま使うことにしました。  
+
+ ![インバータ動作図](images/HAT_inverter.png)
+ ![インバータの接続図](images/HAT_pins.png)
+ ![みんなのインバータ](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_PTC06-1/raw/main/Submitted/all_members_layout_using.png)
+
+
+### インバータの動作確認
+- [インバータ動作チェック用AD3設定ファイル](kicad/1bit-CPU_HAT/Inverter_checker.dwf3work)
+
+ ![インバータのバッファ動作 3.3V->5V](images/inverter_3to5.png)
+ ![インバータのバッファ動作 5V->3.3V](images/inverter_5to3.png)
+ 
+
+## クロック源
+クロック源として、りょうすさんが実装したVCOを流用しました。  
+
+ ![VCOの動作](images/VCO_5to3.png)
+
+
+### クロック源の動作確認
+- [VCO動作チェック用AD3設定ファイル](kicad/1bit-CPU_HAT/VCO_checker.dwf3work)
+ ![VCOの動作図](images/HAT_vco.png)
+
+
+## HATの実装
+チップ内にあるインバータ回路やVCOを利用したため、外部回路は3つのみとなっています。  
+
+- LED点灯用回路
+- リセット回路
+- VCO用電圧制御回路
+
+ ![ボード：回路図](images/kicad_HAT_circuit.png)
+ ![ボード：アートワーク](images/kicad_HAT_artwork.png)
+
+- [本チップ用ラズパイHATディレクトリ：KiCADファイル](kicad/1bit-CPU_HAT)
+
+
+## 実行用インタープリター
+
+- [本CPU用インタープリター](kicad/1bit-CPU_HAT/program/1bit-CPU_interpreter.py)
