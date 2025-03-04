@@ -157,12 +157,21 @@
 - リセット回路
 - VCO用電圧制御回路
 
- ![ボード：回路図](images/kicad_HAT_circuit.png)
- ![ボード：アートワーク](images/kicad_HAT_artwork.png)
+ ![ボード：回路図](images/HAT_kicad_circuit.png)
+ ![ボード：アートワーク](images/HAT_kicad_artwork.png)
 
 - [本チップ用ラズパイHATディレクトリ：KiCADファイル](kicad/1bit-CPU_HAT)
 
 
 ## 実行用インタープリター
+ラズパイ用のプログラム実行用のインタープリターの実装です。
 
 - [本CPU用インタープリター](kicad/1bit-CPU_HAT/program/1bit-CPU_interpreter.py)
+
+
+## 実際のボード
+実際にラズパイZEROに装着した状態と動作状態。
+
+ ![ボード](images/HAT_board.jpg)
+ ![ボード：LED](images/HAT_board_LED.jpg)
+
