@@ -100,6 +100,26 @@
  ![パッドフレーム拡大](images/klayout_frame_zoomin.png)
 
 
+## WSL Image
+上記の回路図やシミュレーション、レイアウト、DRC、LVSを実行するための環境をセットアップしたWSLイメージを用意しています。
+
+- [WSL Image](https://www.noritsuna.jp/download/ubuntu2204_PTC06-1.tar.xz)
+    - ID: ishikai
+    - Pass: ishikai
+
+### Installing WSL Images
+`wsl --import-in-place ubuntu2204_PTC06-1 .\ubuntu2204_PTC06-1\ext4.vhdx`
+
+起動には"ubuntu2204_PTC06-1.lnk"をご利用ください。  
+
+
+### Deleting WSL Images
+イメージも削除されるので注意してください。    
+
+`wsl --unregister ubuntu2204_PTC06-1`
+
+
+
 # [本チップ用ボード](kicad/1bit-CPU_board)
 メモリや外部クロック、動作確認用のLEDを搭載したボードをKiCADで設計しました。  
 
